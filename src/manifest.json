@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "homepage_url": "http://swdyh.github.io/add-to-zaim",
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+        "run_at": "document_end"
+    }
+  ],
+  "description": "extract payment data and post to zaim",
+  "name": "AddToZaim",
+  "version": "0.0.1",
+  "icons": {
+     "16":  "atz_16.png",
+     "32":  "atz_32.png",
+     "48":  "atz_48.png"
+  },
+  "web_accessible_resources": [
+      "zaim_icon.png"
+  ]
+}
